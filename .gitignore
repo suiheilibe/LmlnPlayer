@@ -1,0 +1,4 @@
+bin/*.js
+bin/*.map
+bin/media/*
+!bin/media/README.txt
