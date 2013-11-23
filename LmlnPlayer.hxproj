@@ -23,7 +23,7 @@
     <option flashStrict="False" />
     <option mainClass="Main" />
     <option enabledebug="False" />
-    <option additional="-debug" />
+    <option additional="" />
   </build>
   <!-- haxelib libraries -->
   <haxelib>
@@ -35,12 +35,12 @@
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>
-    <!-- example: <hidden path="..." /> -->
+    <hidden path="obj" />
   </hiddenPaths>
   <!-- Executed before build -->
   <preBuildCommand />
   <!-- Executed after build -->
-  <postBuildCommand alwaysRun="False">java -jar "C:\Program Files (x86)\FlashDevelop\Tools\google\compiler.jar" --js $(OutputFile) --js_output_file $(OutputDir)/$(ProjectName).min.js --externs $(OutputDir)/externs/jquery-1.9.js --externs $(OutputDir)/externs/w3c_audio.js --compilation_level ADVANCED_OPTIMIZATIONS</postBuildCommand>
+  <postBuildCommand alwaysRun="False">java -jar "C:\Program Files (x86)\FlashDevelop\Tools\google\compiler.jar" --js $(OutputFile) --js_output_file $(OutputDir)/$(ProjectName).min.js --externs $(OutputDir)/externs/w3c_audio.js --compilation_level ADVANCED_OPTIMIZATIONS</postBuildCommand>
   <!-- Other project options -->
   <options>
     <option showHiddenPaths="False" />
