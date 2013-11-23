@@ -70,8 +70,8 @@ class WAAPI
 	public function load(url: String, cb: String -> AudioBuffer -> Bool): Bool
 	{
 		var xhr = new XMLHttpRequest();
-		xhr.responseType = "arraybuffer";
 		xhr.open("GET", url, true);
+		xhr.responseType = "arraybuffer";
 		xhr.onload = function (e) {
 			ctx.decodeAudioData(
 				cast xhr.response,
